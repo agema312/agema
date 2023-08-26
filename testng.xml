@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke tests">
+    <test verbose="2" preserve-order="true" name="/Users/Agema/IdeaProjects/Winter2022TAF">
+        <classes>
+            <class name="testNg.CalculatorTest">
+                <methods>
+                    <include name="addTwoNumbersTest"/>
+                    <include name="testSoftAssert"/>
+                    <include name="testAssertTrue"/>
+                    <include name="test123"/>
+                </methods>
+            </class>
+            <class name="testNgAnnotations.DemoClass">
+                <methods>
+                    <include name="demoTest1"/>
+                    <include name="demoTest2"/>
+                </methods>
+            </class>
+            <class name="testNgAnnotations.DemoClass2">
+                <methods>
+                    <include name="testSum"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
